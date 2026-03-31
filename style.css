@@ -563,6 +563,18 @@ input:-webkit-autofill:active {
   margin-bottom: clamp(50px, 6vw, 70px) !important;
 }
 
+.phone-number, .phone-number a {
+    color: inherit !important; /* Наследует цвет текста родителя */
+    text-decoration: none !important; /* Убирает подчеркивание */
+    border-bottom: none !important;
+}
+
+/* Дополнительно для мобильных браузеров на базе WebKit */
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+}
+
 .final-timer { 
   display: flex; 
   justify-content: flex-start;
