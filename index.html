@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Вадим & Виталина</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400&family=Montserrat&family=Oooh+Baby&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="preloader">
+  <div class="iris-wrapper">
+    <div class="preloader-text">Любовь с первого<br>взгляда</div>
+    <img src="preloader/iris.png" class="iris">
+    <img src="preloader/heart.png" class="heart" id="enterBtn">
+  </div>
+</div>
+
+<audio id="music" loop>
+  <source src="audio/music.mp3" type="audio/mpeg">
+</audio>
+
+<div id="site">
+  <div class="reveal-container">
+    <section class="hero reveal" id="hero">
+        <img src="images/iris1.png" class="iris-bg iris-1">
+        <div class="photo-top-wrapper">
+          <img src="images/newlyweds.png" alt="Молодожены" class="full-width-img">
+        </div>
+        <h1 class="main-title">ДОРОГИЕ РОДНЫЕ И БЛИЗКИЕ</h1>
+        <p class="description">Мы хотим разделить с вами один из самых важных и радостных дней в нашей жизни - праздник настоящей любви</p>
+        <h1 class="date-title">03/07/2026</h1>
+        <span class="cursive-red">love at first sight</span>
+    </section>
+    <section class="place-section reveal" id="place">
+        <img src="images/iris2.png" class="iris-bg iris-2">
+      <h1 class="section-title">МЕСТО ПРОВЕДЕНИЯ</h1>
+      <p>Мы выбрали для своей свадьбы одно из чудеснейших мест вдали от городской суеты</p>
+      <p>Адрес: Этно кафе “TEMUJIN”<br>Ул. Баянханская, 5</p>
+      <img src="images/place.png" alt="Место проведения" class="full-width-img">
+      <a href="https://go.2gis.com/LLiSN" target="_blank" class="map-button">Посмотреть на карте</a>
+    </section>
+    <section class="timing-section reveal" id="timing">
+        <img src="images/iris3.png" class="iris-bg iris-3">
+        <h1 class="section-title">ТАЙМИНГ</h1>
+        <p class="sub-date">Суббота, 03 июля 2026</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="time">15:30</div>
+                <div class="event">Сбор гостей, Welcome</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">16:00</div>
+                <div class="event">Церемония</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">17:00</div>
+                <div class="event">Праздничный ужин</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">23:00</div>
+                <div class="event">Завершение вечера</div>
+            </div>
+        </div>
+    </section>
+    <section class="dress-code-section reveal">
+    <h1 class="section-title">ДРЕСС-КОД</h1>
+    <p class="dress-desc">Нам будет очень приятно, если вы выберете образ в предложенной палитре</p>
+    <div class="gender-section">
+        <h3 class="gender-label">Для женщин:</h3>
+        <div class="palette-container">
+            <div class="color-box" style="background: #3D83B6;"></div>
+            <div class="color-box" style="background: #6DB8FA;"></div>
+            <div class="color-box" style="background: #BFDAFE;"></div>
+            <div class="color-box" style="background: #B49D8E;"></div>
+            <div class="color-box" style="background: #86614E;"></div>
+            <div class="color-box" style="background: #561E01;"></div>
+        </div>
+        <div class="dress-collage">
+            <img src="images/woman_outfit1.png" class="c-img w1">
+            <img src="images/woman_outfit3.png" class="c-img w2">
+            <img src="images/woman_outfit2.png" class="c-img w3">
+            <img src="images/woman_outfit4.png" class="c-img w4">
+            <span class="handwritten w-text">be yourself</span>
+        </div>
+    </div>
+    <div class="gender-section">
+        <h3 class="gender-label">Для мужчин:</h3>
+        <div class="palette-container">
+            <div class="color-box" style="background: #FFFFFF;"></div>
+            <div class="color-box" style="background: #BFDAFE;"></div>
+            <div class="color-box" style="background: #B49D8E;"></div>
+            <div class="color-box" style="background: #86614E;"></div>
+            <div class="color-box" style="background: #561E01;"></div>
+            <div class="color-box" style="background: #121111;"></div>
+        </div>
+        <div class="dress-collage">
+            <img src="images/man_outfit1.png" class="c-img m1">
+            <img src="images/man_outfit3.png" class="c-img m2">
+            <img src="images/man_outfit2.png" class="c-img m3">
+            <img src="images/man_outfit4.png" class="c-img m4">
+            <span class="handwritten m-text">be confident</span>
+        </div>
+    </div>
+</section>
+    <section class="form-section reveal">
+        <h1 class="section-title">АНКЕТА ГОСТЯ</h1>
+        <p>Просим подтвердить свое присутствие на торжестве до 15 июня 2026</p>
+        <form id="rsvpForm" class="styled-form">
+            <div class="input-group">
+                <label>Ваше Имя и Фамилия</label>
+                <input type="text" name="name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="radio-group-container">
+              <label>Подтвердите присутствие на торжестве</label> <label class="radio-label">
+                <input type="radio" name="attendance" value="yes" required>
+                <span>Да, смогу прийти</span>
+              </label>
+              <label class="radio-label">
+                  <input type="radio" name="attendance" value="no"> К сожалению, не смогу
+              </label>
+            </div>
+            <div class="input-group">
+                <label>Будет ли с вами кто-то еще?</label>
+                <input type="text" name="guests" placeholder="Да, Анна Иванова">
+            </div>
+            <button type="submit" class="submit-btn">ОТПРАВИТЬ</button>
+        </form>
+      </section>
+    <section class="contacts-section reveal" id="contacts">
+        <img src="images/iris4.png" class="iris-bg iris-4">
+        <h1 class="section-title">КОНТАКТЫ</h1>
+        <p>По всем вопросам в день мероприятия и до него вы можете обращаться к нашему организатору:</p>
+        <h3 class="phone-number">+7 (924) 775-50-50<br>Елена Денисова</h3>
+        <h1 class="final-title">ДО ВСТРЕЧИ НА ПРАЗДНИКЕ ЛЮБВИ</h1>
+        <div class="final-timer">
+          <div class="timer-item">
+              <span id="d-val">00</span>
+              <small>дней</small>
+          </div>
+          <div class="timer-item">
+              <span id="h-val">00</span>
+              <small>часов</small>
+          </div>
+          <div class="timer-item">
+              <span id="m-val">00</span>
+              <small>минут</small>
+          </div>
+          <div class="timer-item">
+              <span id="s-val">00</span>
+              <small>секунд</small>
+          </div>
+        </div>
+             <div class="photo-bottom-wrapper">
+          <img src="images/newlyweds_end.png" alt="Молодожены" class="full-width-img">
+        </div>
+    </section>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  const audio = document.getElementById('music');
+  audio.volume = 0.05; 
+</script>
+
+<script>
+document.getElementById("rsvpForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const formData = {
+        name: this.name.value,
+        attendance: this.attendance.value,
+        guests: this.guests.value
+    };
+    document.getElementById("successModal").classList.add("active");
+    this.reset();
+    fetch("https://script.google.com/macros/s/AKfycbypj6LrALJUij4Kmxxmd2fAfXwwR7oWIPQxRf7zaMnrG5_47c0m0--EK2O4bP4y6sbIZA/exec", {
+        method: "POST",
+        mode: "no-cors",
+        body: JSON.stringify(formData)
+    })
+    .catch(err => {
+        console.error(err);
+    });
+    const modal = document.getElementById("successModal");
+    const closeBtn = document.querySelector(".close-modal");
+    closeBtn.onclick = () => {
+    modal.classList.remove("active");
+    };
+    window.onclick = (e) => {
+    if (e.target === modal) {
+        modal.classList.remove("active");
+    }
+    };
+});
+</script>
+
+    <div id="successModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <p>Спасибо! Данные отправлены.</p>
+    </div>
+    </div>
+</body>
+</html>
