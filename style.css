@@ -256,10 +256,10 @@ p, .event, .sub-date {
     padding-left: 20px; 
 }
 
-.timeline-item:nth-child(1) { margin-left: 80px; }
-.timeline-item:nth-child(2) { margin-left: 140px; }
-.timeline-item:nth-child(3) { margin-left: 200px; }
-.timeline-item:nth-child(4) { margin-left: 260px; }
+.timeline-item:nth-child(1) { margin-left: 60px; }
+.timeline-item:nth-child(2) { margin-left: 110px; }
+.timeline-item:nth-child(3) { margin-left: 170px; }
+.timeline-item:nth-child(4) { margin-left: 230px; }
 
 .timeline-item::before {
   content: ''; 
@@ -269,10 +269,10 @@ p, .event, .sub-date {
   background-color: #554242;
 }
 
-.timeline-item:nth-child(1)::before { width: 80px; left: -80px; }
-.timeline-item:nth-child(2)::before { width: 140px; left: -140px; }
-.timeline-item:nth-child(3)::before { width: 200px; left: -200px; }
-.timeline-item:nth-child(4)::before { width: 260px; left: -260px; }
+.timeline-item:nth-child(1)::before { width: 60px; left: -60px; }
+.timeline-item:nth-child(2)::before { width: 110px; left: -110px; }
+.timeline-item:nth-child(3)::before { width: 170px; left: -170px; }
+.timeline-item:nth-child(4)::before { width: 230px; left: -230px; }
 
 .time {
   font-size: clamp(32px, 4vw, 42px);
@@ -360,6 +360,17 @@ p, .event, .sub-date {
 .m3 { width: 33%; top: 35%; left: 33%; z-index: 4; }
 .m4 { width: 26%; top: 65%; right: 14%; z-index: 3; }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dress-collage {
+    position: relative;
+    width: 100%;
+    height: 650px;
+}
+    .w3 { top: 25%; }
+    .m3 { top: 25%; }
+    .m4 { top: 55%}
+}
+
 @media (max-width: 768px) {
     .w1 { width: 42%; top: 0%; left: 5%; }
     .w2 { width: 42%; top: 5%; right: 5%; }
@@ -372,16 +383,18 @@ p, .event, .sub-date {
     .m4 { width: 38%; top: 65%; right: 8%; }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 412px) and (max-width: 509px) {
   .dress-collage {
-    position: relative;
-    width: 100%;
+    height: 750px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 412px) {
+  .dress-collage {
     height: 650px;
+  }
 }
-    .w3 { top: 25%; }
-    .m3 { top: 25%; }
-    .m4 { top: 55%}
-}
+
 
 /* Надписи от руки */
 .handwritten {
@@ -427,6 +440,44 @@ p, .event, .sub-date {
         font-size: 25px;
         transform: rotate(10deg);
     }
+}
+
+@media (min-width: 485px) and (max-width: 508px){
+  .w-text {
+    top: 80%;
+  }
+  .m-text {
+    top: 80%;
+  }
+}
+
+@media (min-width: 435px) and (max-width: 485px){
+  .w-text {
+    top: 75%;
+  }
+  .m-text {
+    top: 80%;
+  }
+}
+
+
+
+@media (min-width: 412px) and (max-width: 435px) {
+  .w-text {
+    top: 70%;
+  }
+  .m-text {
+    top: 75%;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 412px) {
+  .w-text {
+    top: 75%;
+  }
+  .m-text {
+    top: 80%;
+  }
 }
 
 @media (max-width: 768px) {
