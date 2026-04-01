@@ -274,6 +274,20 @@ p, .event, .sub-date {
 .timeline-item:nth-child(3)::before { width: 170px; left: -170px; }
 .timeline-item:nth-child(4)::before { width: 230px; left: -230px; }
 
+
+@media (max-width: 768px) {
+  .timeline-item:nth-child(1) { margin-left: 40px; }
+  .timeline-item:nth-child(2) { margin-left: 90px; }
+  .timeline-item:nth-child(3) { margin-left: 150px; }
+  .timeline-item:nth-child(4) { margin-left: 210px; }
+
+  .timeline-item:nth-child(1)::before { width: 40px; left: -40px; }
+  .timeline-item:nth-child(2)::before { width: 90px; left: -90px; }
+  .timeline-item:nth-child(3)::before { width: 150px; left: -150px; }
+  .timeline-item:nth-child(4)::before { width: 210px; left: -210px; }
+}
+
+
 .time {
   font-size: clamp(32px, 4vw, 42px);
   font-family: 'Noto Serif Display', serif;
